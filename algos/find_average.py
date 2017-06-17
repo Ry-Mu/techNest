@@ -13,6 +13,6 @@ def find_average(arr):
     sum = 0
     for i in arr:
         sum += i
-    print(sum)
+    return sum/len(arr)
 
-find_average([3,3])
+print(find_average([3,3,3,9,7]))
