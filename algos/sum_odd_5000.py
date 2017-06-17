@@ -14,6 +14,6 @@ def sum_odd_5000():
     for i in range(1,5001):
         if i % 2 == 1:
             sum += i
-    print(sum)
+    return sum
 
-sum_odd_5000()
+print(sum_odd_5000())

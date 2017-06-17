@@ -14,6 +14,6 @@ def find_max(arr):
     for i in arr:
         if max < i:
             max = i
-    print(max)
+    return max
 
-find_max([2,4,5,2,3,7,33,2])
+print(find_max([2,4,5,64,2,3,7,33,2]))
