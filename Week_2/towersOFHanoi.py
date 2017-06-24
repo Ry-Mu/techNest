@@ -7,8 +7,11 @@ Created on Sat Jun 24 10:59:28 2017
 """
 #towersOfHanoi
 
+count = 0
 def printMove(fr, to):
+    global count
     print('move from ' + str(fr) + ' to ' + str(to))
+    count +=1
 
 def Towers(n, fr, to, spare):
     if n == 1:
@@ -18,4 +21,5 @@ def Towers(n, fr, to, spare):
         Towers(1, fr, to, spare)
         Towers(n-1, spare, to, fr)
 
-print(Towers(4, 'P1', 'P2', 'P3'))
+print(Towers(10, 'P1', 'P2', 'P3'))
+print("Total Steps: ", count)
